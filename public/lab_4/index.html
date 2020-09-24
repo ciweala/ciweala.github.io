@@ -1,1 +1,57 @@
-hello world
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "utf-8">
+    <title>Chinemerem Iweala Lab 4</title>
+    <link href = "styles.css" rel="stylesheet">
+</head>
+<div id="wrapper">
+    <div class = "container">
+    <h1>Chinemerem Iweala Lab 4</h1>
+     <form action="/api" method="post">
+        <ul class="flex-outer">
+            <li>
+                <label for="fname">First Name</label>
+                <input type="text" id="first-name" maxlength="140">
+            </li>
+            <li>
+                <label for="lname">Last Name</label>
+                <input type="text" id="last-name" maxlength="140">
+            </li>
+            <li>
+                <label for="email">Email</label>
+                <input type="email" id="email">
+            </li>
+            <li>
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone">
+            </li>
+            <li>
+                <label for="message" >Text field</label>
+                <textarea rows="5" cols="33" name="message"></textarea>
+            </li>
+            <li>
+                <p>Age</p>
+                <ul class ="flex-inner">
+                    <li>
+                        <input type="checkbox" id="eighteen-to-thirtyfive">
+                        <label for="eighteen-to-thirtyfive">18-35</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="thirtyfive-to-fifty">
+                        <label for="thirtyfive-to-fifty">35-50</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="fifty-to-sixtyfive">
+                        <label for="fifty-to-sixtyfive">50-65</label>
+                    </li>
+                </ul>
+            <li>
+                <button name="button" type="submit">Submit</button>
+            </li>    
+            </li>
+        </ul>
+     </form>
+    </div>
+</div>
+</html>
