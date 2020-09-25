@@ -3,51 +3,52 @@
 <head>
     <meta charset = "utf-8">
     <title>Chinemerem Iweala Lab 4</title>
-    <link href = "styles.css" rel="stylesheet">
+    <link rel="stylesheet" href ="styles.css">
+
+    <div id="wrapper">
+        <div class = "container">
+        <h1>Chinemerem Iweala Lab 4</h1>
 </head>
-<div id="wrapper">
-    <div class = "container">
-    <h1>Chinemerem Iweala Lab 4</h1>
-     <form action="/api" method="post">
+    <form action="/api" method="post">
         <ul class="flex-outer">
             <li>
-                <label for="fname">First Name</label>
-                <input type="text" id="first-name" maxlength="140">
+                <label for="fname" id="fname">First Name</label>
+                <input type="text" id="fname" maxlength="140" name="fname">
             </li>
             <li>
-                <label for="lname">Last Name</label>
-                <input type="text" id="last-name" maxlength="140">
+                <label for="lname" id="lname">Last Name</label> 
+                <input type="text" id="lname" maxlength="140" name = "lname">
             </li>
             <li>
-                <label for="email">Email</label>
-                <input type="email" id="email">
+                <label for="email" id="email">Email</label>
+                <input type="email" id="email" name = "email">
             </li>
             <li>
-                <label for="phone">Phone</label>
-                <input type="tel" id="phone">
+                <label for="phone" id="phone">Phone</label>
+                <input type="tel" id="phone" name = "tel">
             </li>
             <li>
-                <label for="message" >Text field</label>
-                <textarea rows="5" cols="33" name="message"></textarea>
+                <label for="message" id="messsage">Text field</label>
+                <textarea rows="5" cols="33" name="message" id="message"></textarea>
             </li>
             <li>
                 <p>Age</p>
                 <ul class ="flex-inner">
                     <li>
-                        <input type="checkbox" id="eighteen-to-thirtyfive">
-                        <label for="eighteen-to-thirtyfive">18-35</label>
+                        <input type="checkbox" id="eighteen-to-thirtyfive" name="eighteen-to-thirtyfive">
+                        <label for="eighteen-to-thirtyfive" id="eighteen-to-thirtyfive">18-35</label>
                     </li>
                     <li>
-                        <input type="checkbox" id="thirtyfive-to-fifty">
+                        <input type="checkbox" id="thirtyfive-to-fifty" name="thirtyfive-to-fifty">
                         <label for="thirtyfive-to-fifty">35-50</label>
-                    </li>
+                    </li> 
                     <li>
-                        <input type="checkbox" id="fifty-to-sixtyfive">
+                        <input type="checkbox" id="fifty-to-sixtyfive" name="fifty-to-sixtyfive">
                         <label for="fifty-to-sixtyfive">50-65</label>
                     </li>
                 </ul>
             <li>
-                <button name="button" type="submit">Submit</button>
+                <button name="button" type="submit" id="submit"> Submit </button>
             </li>    
             </li>
         </ul>
