@@ -1,19 +1,22 @@
 body {
+    font: normal 18px/1.5 "Arial";
     background-color: rgb(117, 99, 233);
+    padding: 50px 0;
 }
 
 .container {
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
-}
+  }
+  
+  .container * {
+    box-sizing: border-box;
+  }
 
-#wrapper {
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 960px;
-    padding-left: 10px;
-    padding-right: 10px;
+h1{
+    font-size: 3rem;
+    text-align: center;
 }
 
 .flex-outer,
@@ -26,6 +29,9 @@ body {
   max-width: 800px;
   margin: 0 auto;
   padding: 0 16px;
+  margin-left: 0;
+  margin-right: 0;
+
 }
 
 .flex-outer li,
