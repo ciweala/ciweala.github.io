@@ -26,16 +26,12 @@ function makeYourOptionsObject(datapointsFromRestaurantsList) {
   // set your chart configuration here!
   CanvasJS.addColorSet('customColorSet1', [
     // add an array of colors here https://canvasjs.com/docs/charts/chart-options/colorset/
-    '#4661EE',
-    '#EC5657',
-    '#1BCDD1',
+    '#4287f5',
+    '#9042f5',
+    '#020dd9',
     '#8FAABB',
-    '#B08BEB',
-    '#3EA0DD',
-    '#F5A52A',
-    '#23BFAA',
-    '#FAA586',
-    '#EB8CC6'
+    '#ae82e0',
+    '#24e059',
   ]);
   const canvasJSConfigObject ={
     animationEnabled: true,
@@ -58,19 +54,19 @@ function makeYourOptionsObject(datapointsFromRestaurantsList) {
 	      customBreaks: [{
 	             startValue: 40,
 	             endValue: 50,
-	             color: 'orange',
+	             color: 'gray',
 	             type: 'zigzag'
         },
         {
 	             startValue: 85,
 	             endValue: 100,
-	             color: 'orange',
+	             color: 'gray',
 	             type: 'wavy'
         },
         {
           startValue: 140,
           endValue: 175,
-          color: 'orange',
+          color: 'gray',
           type: 'zigzag'
         }]
  
