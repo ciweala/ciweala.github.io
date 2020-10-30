@@ -37,12 +37,11 @@ function makeYourOptionsObject(datapointsFromRestaurantsList) {
     '#FAA586',
     '#EB8CC6'
   ]);
-
-  const chart = new CanvasJS.Chart('chartContainer', {
+  const canvasJSConfigObject ={
     animationEnabled: true,
     colorSet: 'customColorSet1',
     title: {
-      text: 'Resturants by Category'
+      text: 'Places To Eat Out In Future'
     },
     axisX: {
       interval: 1,
@@ -61,19 +60,19 @@ function makeYourOptionsObject(datapointsFromRestaurantsList) {
 	             endValue: 50,
 	             color: 'orange',
 	             type: 'zigzag'
-             },
-             {
+        },
+        {
 	             startValue: 85,
 	             endValue: 100,
 	             color: 'orange',
 	             type: 'wavy'
-             },
-             {
-              startValue: 140,
-              endValue: 175,
-              color: 'orange',
-              type: 'zigzag'
-            }]
+        },
+        {
+          startValue: 140,
+          endValue: 175,
+          color: 'orange',
+          type: 'zigzag'
+        }]
  
       },
     }, // Add your scale breaks here https://canvasjs.com/docs/charts/chart-options/axisy/scale-breaks/custom-breaks/
@@ -84,8 +83,8 @@ function makeYourOptionsObject(datapointsFromRestaurantsList) {
       axisYType: 'secondary',
       dataPoints: datapointsFromRestaurantsList
     }]
-  });
-  chart.render();
+  };
+  return canvasJSConfigObject;
 }
 function runThisWithResultsFromServer(jsonFromServer) {
   console.log('testfunctionrunthiswithresultsfromserver');
@@ -96,8 +95,8 @@ function runThisWithResultsFromServer(jsonFromServer) {
   // Instantiate your chart
   const reorganizedData = convertRestaurantsToCategories(jsonFromServer);
   const options = makeYourOptionsObject(reorganizedData);
-  // const chart = new CanvasJS.Chart('chartContainer', options);
-  // chart.render();
+  const chart = new CanvasJS.Chart('chartContainer', options);
+  chart.render();
 }
 
 // Leave lines 52-67 alone; do your work in the functions above
