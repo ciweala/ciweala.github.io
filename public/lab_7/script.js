@@ -1,9 +1,26 @@
 function convertRestaurantsToCategories(restaurantList) {
   // process your restaurants here!
-  
-  return list;
-}
+  const categoryArray = [];
+  const result = {};
+  for (let i = 0; i < restaurantList.length; i += 1) {
+    categoryArray.push(restaurantList[i].category)
+  }
+  for (let i = 0; i < categoryArray.length; i += 1) {
+    if (!result[categoryArray[i]]) {
+      result[categoryArray[i]] = 0;
+    }
+    result[categoryArray[i]] += 1;
+  }
 
+  const reply = Object.keys(result).map((category) {
+    y: reuslt[category],
+    label: category
+  }));
+  console.log('reply',reply);
+  return reply; 
+  // return list;
+}
+ 
 function makeYourOptionsObject(datapointsFromRestaurantsList) {
   // set your chart configuration here!
   return canvasJSConfigObject;
